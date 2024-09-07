@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'tracking',
     'booking',
     'profiles',
-    'knox',
+    
     'accounts',
     
     
@@ -88,11 +88,11 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER' :os.getenv('DB_USER'),
-        'PASSWORD' : os.getenv('DB_PASSWORD'),
-        'HOST' : os.getenv('DB_HOST'),
-        'PORT' : os.getenv('DB_PORT')
+        'NAME': 'busbookingsystem',
+        'USER' :'root',
+        'PASSWORD' : 'Muthoni06$',
+        'HOST' : 'localhost',
+        'PORT' : '3306'
 
 
     }
